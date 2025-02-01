@@ -18,7 +18,8 @@ namespace WpfAppBD
 {
     public partial class AuthorizationApp : Window
     {
-        SqlConnection sqlConnection;
+        private readonly SqlConnection sqlConnection;
+
         public AuthorizationApp()
         {
             InitializeComponent();
@@ -31,33 +32,23 @@ namespace WpfAppBD
             string surname = UserSurnameTextBox.Text;
             string password = PasswordBox.Password;
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(surname) || string.IsNullOrEmpty(password))
+            if (IsLoginDataValid(username, surname, password))
             {
-                MessageBox.Show("Будь ласка, заповніть всі поля!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            int userId = AuthenticateUser(username, surname, password);
-            if (userId > 0)
-            {
-                if (password == "admin")
-                {
-                    MainWindow adminWindow = new MainWindow();
-                    adminWindow.Show();
-                }
-                else
-                {
-                    UserWindow userWindow = new UserWindow(userId);
-                    userWindow.Show();
-                }
-
-                this.Close();
+                int userId = AuthenticateUser(username, surname, password);
+                HandleLoginResult(userId, password);
             }
             else
             {
-                MessageBox.Show("Невірний логін або пароль!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
+                ShowErrorMessage("Будь ласка, заповніть всі поля!");
             }
         }
-        private int AuthenticateUser(string username, string surname,string password)
+
+        private bool IsLoginDataValid(string username, string surname, string password)
+        {
+            return !string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(surname) && !string.IsNullOrEmpty(password);
+        }
+
+        private int AuthenticateUser(string username, string surname, string password)
         {
             try
             {
@@ -73,7 +64,7 @@ namespace WpfAppBD
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Помилка підключення до бази даних: {ex.Message}", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
+                ShowErrorMessage($"Помилка підключення до бази даних: {ex.Message}");
                 return -1;
             }
             finally
@@ -82,11 +73,49 @@ namespace WpfAppBD
             }
         }
 
+        private void HandleLoginResult(int userId, string password)
+        {
+            if (userId > 0)
+            {
+                if (password == "admin")
+                {
+                    OpenAdminWindow();
+                }
+                else
+                {
+                    OpenUserWindow(userId);
+                }
+
+                this.Close();
+            }
+            else
+            {
+                ShowErrorMessage("Невірний логін або пароль!");
+            }
+        }
+
+        private void OpenAdminWindow()
+        {
+            MainWindow adminWindow = new MainWindow();
+            adminWindow.Show();
+        }
+
+        private void OpenUserWindow(int userId)
+        {
+            UserWindow userWindow = new UserWindow(userId);
+            userWindow.Show();
+        }
+
+        private void ShowErrorMessage(string message)
+        {
+            MessageBox.Show(message, "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
+        }
+
         private void NavigateToRegistration(object sender, RoutedEventArgs e)
         {
             RegistrationApp registrationWindow = new RegistrationApp();
-            registrationWindow.Show(); 
-            this.Close(); 
+            registrationWindow.Show();
+            this.Close();
         }
     }
 }
