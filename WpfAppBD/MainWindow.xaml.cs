@@ -65,34 +65,25 @@ namespace WpfAppBD
 
         private void Upd_Record(object sender, RoutedEventArgs e)
         {
-            TabItem item = (TabItem)tabs.SelectedItem; 
+            TabItem item = (TabItem)tabs.SelectedItem;
             DataGrid dataGrid = (DataGrid)item.Content;
 
             if (dataGrid.SelectedItem != null)
             {
                 DataRowView selectedRow = (DataRowView)dataGrid.SelectedItem;
-                int carId = (int)selectedRow.Row.ItemArray[0];
-                int clientId = (int)selectedRow.Row.ItemArray[0];
-                int producerId = (int)selectedRow.Row.ItemArray[0];
-                int saleId = (int)selectedRow.Row.ItemArray[0];
-                int serviceId = (int)selectedRow.Row.ItemArray[0];
-                switch (item.Header.ToString())
+                int recordId = (int)selectedRow.Row.ItemArray[0];
+                var updateActions = new Dictionary<string, Action<int>>()
                 {
-                    case "Cars":
-                        Upd_car(carId);
-                        break;
-                    case "Clients":
-                        Upd_Client(clientId);
-                        break;
-                    case "Producer":
-                        Upd_Producer(producerId);
-                        break;
-                    case "Sales":
-                        Upd_sale(saleId);
-                        break;
-                    case "Service":
-                        Upd_Service(serviceId);
-                        break;
+                    { "Cars", Upd_car },
+                    { "Clients", Upd_Client },
+                    { "Producer", Upd_Producer },
+                    { "Sales", Upd_sale },
+                    { "Service", Upd_Service }
+                };
+
+                if (updateActions.ContainsKey(item.Header.ToString()))
+                {
+                    updateActions[item.Header.ToString()](recordId);
                 }
             }
         }
