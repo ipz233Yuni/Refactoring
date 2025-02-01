@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppBD.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBD"
+        mc:Ignorable="d"
+        Title="Допоміжне вікно" Height="403" Width="789" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="AliceBlue">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Введіть дані:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataAsk" Margin="10,41,10,65" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Значення" Binding="{Binding ValueFromDataToShow}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Введені дані" Binding="{Binding UserInputValue}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Підтвердити" HorizontalAlignment="Center" Margin="0,302,0,0" Width="124" Click="Button_Click" Height="31" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

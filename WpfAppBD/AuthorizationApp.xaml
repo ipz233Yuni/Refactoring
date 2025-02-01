@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppBD.AuthorizationApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBD"
+        mc:Ignorable="d"
+        Title="Авторизація" Height="350" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="AliceBlue">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="273">
+            <Label Content="Ім'я:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="UsernameTextBox" Width="250" Margin="5,0,5,0"/>
+
+            <Label Content="Прізвище:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="UserSurnameTextBox" Width="250" Margin="5,0,5,0"/>
+
+            <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <PasswordBox x:Name="PasswordBox" Width="250" Margin="5,0,5,0"/>
+
+            <Button x:Name="LoginButton" Width="250" Margin="10" Content="Увійти" Click="LoginButton_Click"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" FontSize="14" TextAlignment="Center">
+                <Hyperlink NavigateUri="RegistrationApp.xaml" Click="NavigateToRegistration">Не маєте облікового запису? <LineBreak/>Зареєструватись</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

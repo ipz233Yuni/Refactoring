@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfAppBD.RegistrationApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBD"
+        mc:Ignorable="d"
+        Title="Реєстрація" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="AliceBlue">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,2,0,0">
+            <Label Content="Ім'я:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="txtFirstName" Width="250" Margin="5,0,5,0" />
+
+            <Label Content="Прізвище:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="txtLastName" Width="250" Margin="5,0,5,0" />
+
+            <Label Content="Номер телефону:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="txtPhoneNumber" Width="250" Margin="5,0,5,0" />
+
+            <Label Content="Електронна пошта:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="txtEmail" Width="250" Margin="5,0,5,0" />
+            
+            <Label Content="Адреса:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <TextBox x:Name="txtAdress" Width="250" Margin="5,0,5,0" />
+
+            <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,0"/>
+            <PasswordBox x:Name="txtPassword" Width="250" Margin="5,0,5,0" />
+            
+            <Button x:Name="btnRegister" Width="250" Margin="10" Content="Зареєструватися" Click="btnRegister_Click"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" FontSize="14" TextAlignment="Center">
+                <Hyperlink NavigateUri="AuthorizationApp.xaml" Click="NavigateToAuthorization">Авторизація</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

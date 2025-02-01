@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfAppBD.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBD"
+        mc:Ignorable="d"
+        Title="Дилер авто" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="AliceBlue">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Історія обслуговування">
+                <Grid Margin="10">
+                    <Label Content="Ваші авто:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="UserCarsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,0,0,0" Width="200" SelectionChanged="UserCarsComboBox_SelectionChanged"/>
+                    <DataGrid x:Name="ServiceHistoryDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,40,0,0"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Замовлення авто">
+                <Grid Margin="10">
+                    <DataGrid x:Name="CarsDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="200" Margin="0,0,0,0"/>
+                    <Button Content="Оновити список авто" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0" Width="150" Click="LoadCarsButton_Click"/>
+                    <Label Content="Виберіть авто:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,250,0,0"/>
+                    <TextBox x:Name="SelectedCarIdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,250,0,0" Width="100"/>
+
+                    <Label Content="Спосіб оплати:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,290,0,0"/>
+                    <ComboBox x:Name="PaymentTypeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,290,0,0" Width="200">
+                        <ComboBoxItem Content="Готівка" />
+                        <ComboBoxItem Content="Банківська карта" />
+                        <ComboBoxItem Content="Кредит" />
+                    </ComboBox>
+
+                    <Button Content="Замовити авто" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,250,0,0" Width="150" Click="OrderCarButton_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

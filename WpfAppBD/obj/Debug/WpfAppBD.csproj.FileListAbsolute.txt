@@ -1,0 +1,40 @@
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.csproj.AssemblyReference.cache
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\MainWindow.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\App.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD_MarkupCompile.cache
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD_MarkupCompile.lref
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\bin\Debug\WpfAppBD.exe.config
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\bin\Debug\WpfAppBD.exe
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\bin\Debug\WpfAppBD.pdb
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\MainWindow.baml
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.g.resources
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.Properties.Resources.resources
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.csproj.GenerateResource.cache
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.csproj.CoreCompileInputs.cache
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.exe
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\WpfAppBD.pdb
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\Window1.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Бази даних\lab10\WpfAppBD\obj\Debug\Window1.baml
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\bin\Debug\WpfAppBD.exe.config
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\bin\Debug\WpfAppBD.exe
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\bin\Debug\WpfAppBD.pdb
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.csproj.AssemblyReference.cache
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\MainWindow.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\Window1.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\App.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD_MarkupCompile.cache
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD_MarkupCompile.lref
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\MainWindow.baml
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\Window1.baml
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.g.resources
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.Properties.Resources.resources
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.csproj.GenerateResource.cache
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.csproj.CoreCompileInputs.cache
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.exe
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\WpfAppBD.pdb
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\AuthorizationApp.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\AuthorizationApp.baml
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\UserWindow.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\UserWindow.baml
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\RegistrationApp.g.cs
+C:\Users\мс\Documents\Навчання\2 курс\Курсова\CourseWork\WpfAppBD\obj\Debug\RegistrationApp.baml
